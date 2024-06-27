@@ -19,7 +19,7 @@
 | Language | Logo | Description | Repository |Status|
 |----------|------|-------------|------------|-----|
 | Python   | ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) | Python is widely used in DevOps for scripting automation tasks, building tools, and managing infrastructure with frameworks like Ansible and Terraform. | [Python Repo](https://github.com/python/cpython) | Started |
-| Go       | ![Go](https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white) | Go (Golang) is favored in DevOps for its simplicity, concurrency support, and efficient performance in creating microservices, cloud-native applications, and CLI tools. | [Go Repo](https://github.com/golang/go) | Not yet Started |
+| Go       | ![Go](https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white) | Go (Golang) is favored in DevOps for its simplicity, concurrency support, and efficient performance in creating microservices, cloud-native applications, and CLI tools. | [Go Repo](https://github.com/golang/go) | Started |
 
 
 ### 2. Operating System and Scripting, Editors
