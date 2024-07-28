@@ -7,4 +7,8 @@ This guide covers essential Git commands and GitHub operations for beginners. Gi
 
 ### 1. Initialize a Git Repository
 ```bash
-git init
+git init```
+
+### 1. Initialize a Git Repository
+
+
