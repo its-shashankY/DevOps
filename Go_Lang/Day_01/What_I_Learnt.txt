@@ -1,0 +1,38 @@
+hey I am studying my journey with learning the devops and making an initiative in learning public
+Here are the Things What I learnt in First day:
+Go-lang developed By Google in 2007, open Sourced in 2009, Performant, Scaled, Ditributed System
+Simple like Python and Efficient like C++,
+server Side -> Microservice, Web, database oriented
+Fast Build Time, Startup and Run, Requires Fewer Reources
+
+
+List of Commands
+1. Run a Go Program: This command compiles and runs the Go program specified.
+   >> go run
+2. Build a Go Program: This command compiles the packages and dependencies but does not run the program, generating an executable binary in the current directory. You can specify an output name for the binary.
+   >> go build
+3. This command compiles and installs the packages and dependencies. The resulting binary is placed in the $GOPATH/bin directory
+   >> go install
+4. Format Code: This command formats the Go source code in the specified package(s).
+   >> go fmt
+5. Vet Code: This command examines Go source code and reports suspicious constructs, such as mismatched arguments in Printf calls.
+   >> go vet
+6. Get Packages: This command downloads and installs packages and dependencies.
+   >> go get
+7. Test Code: This command runs the tests in the specified package(s).
+   >> go tests
+
+
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    fmt.Println("Hello, World!")
+}
+
+
+above main package is executable, while others are Reusable, 
+fmt standered library, 
