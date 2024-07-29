@@ -14,8 +14,10 @@ git init
 ### 2. Check Repository Status
 ```bash
 git status
+git status --short
 ```
 This command checks the status of the project. Files in red are untracked, meaning Git doesn't have a history of these files.
+--short option to see the changes in a more compact way
 
 ### 3. Add Files to Staging Area
 ```bash
@@ -99,3 +101,39 @@ git push origin master
 This pushes your code to the "master" branch on GitHub.
 Conclusion
 This guide covers the basics of Git and GitHub operations. As you become more familiar with these tools, you'll discover more advanced features and techniques to improve your development workflow.
+
+### 14. Download the Whole Repository
+```bash
+git clone URL
+```
+This Downloads the whole of the Repository from the URL mentioned over above and downloads a Copy into your local repository
+
+### 15. Get the New Changes in the Repository
+```bash
+git pull URL
+```
+it is the Combination 
+```bash 
+git fetch
+git merge
+```
+If Original is in your local repository, but not updated using above code you can update the local repo with the new one.
+
+### 16. Merge the branch with the Newone
+```bash
+git merge v1
+```
+If the V0 is the Main Branch, Then above code will Merge V1 changes into V0.
+
+### 17. Add Username and Email to the Git
+```bash
+git config --global user.name "w3schools-test"
+git config --global user.email "test@w3schools.com"
+```
+Use above code to add User name and Email to the Git, So to Authenticate yourself
+
+### 18. Delete Any short of Branch in Github
+```bash
+git branch -d emergency-fix
+```
+Too Delete the Any branch that Doesn't Exists
