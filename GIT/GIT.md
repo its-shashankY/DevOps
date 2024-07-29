@@ -3,6 +3,9 @@
 ## Introduction
 This guide covers essential Git commands and GitHub operations for beginners. Git is a distributed version control system that helps developers track changes in their code and collaborate with others. GitHub is a web-based platform that uses Git for version control and provides additional features for project management and collaboration.
 
+## Link to Medium
+[Medium]([https://website-name.com](https://medium.com/@shashankyadahalli90/git-and-github-basics-a-comprehensive-guide-for-beginners-998f454e3a6d))
+
 ## Git Commands
 
 ### 1. Initialize a Git Repository
