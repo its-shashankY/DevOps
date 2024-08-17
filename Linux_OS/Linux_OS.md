@@ -204,4 +204,156 @@
 
 ## Conclusion
 
-These Linux commands are essential for managing files, directories, processes, networking, and system resources. Mastering these commands will enhance your efficiency and proficiency in using Linux.
+These Linux commands are essential for managing files, directories, processes, networking, and system resources. Mastering these commands will enhance your efficiency and proficiency in using Linux
+# Essential Linux Commands: Vim, chmod, and awk
+
+## 1. Vim Commands
+
+*Vim* is a powerful text editor used in Linux for editing files. Below are the most commonly used Vim commands:
+
+### 1.1 Basic Vim Commands
+
+- vim [filename]: Opens a file in Vim. If the file does not exist, Vim creates a new file.
+
+- i: Enters *Insert Mode* where you can type and edit text.
+
+- Esc: Exits *Insert Mode* and returns to *Command Mode*.
+
+- :w: Saves the changes to the file (write).
+
+- :q: Quits Vim.
+
+- :wq or :x: Saves changes and quits Vim.
+
+- :q!: Quits Vim without saving changes.
+
+- :e [filename]: Opens another file in Vim.
+
+### 1.2 Navigation
+
+- h, j, k, l: Moves the cursor left, down, up, and right, respectively.
+
+- 0: Moves the cursor to the beginning of the line.
+
+- $: Moves the cursor to the end of the line.
+
+- gg: Moves the cursor to the beginning of the file.
+
+- G: Moves the cursor to the end of the file.
+
+- w: Moves the cursor to the beginning of the next word.
+
+- b: Moves the cursor to the beginning of the previous word.
+
+### 1.3 Editing
+
+- dd: Deletes the entire current line.
+
+- dw: Deletes the word under the cursor.
+
+- d$: Deletes from the cursor to the end of the line.
+
+- x: Deletes the character under the cursor.
+
+- u: Undoes the last change.
+
+- Ctrl + r: Redoes the undone change.
+
+- yy: Copies (yanks) the current line.
+
+- p: Pastes the copied or cut content after the cursor.
+
+- r [character]: Replaces the character under the cursor with another character.
+
+- v: Enters *Visual Mode* to select text.
+
+- y: Copies the selected text in Visual Mode.
+
+- d: Deletes the selected text in Visual Mode.
+
+- :s/old/new/g: Replaces all occurrences of "old" with "new" in the current line.
+
+- :%s/old/new/g: Replaces all occurrences of "old" with "new" in the entire file.
+
+### 1.4 Searching
+
+- /pattern: Searches for a pattern in the file.
+
+- n: Moves to the next occurrence of the search pattern.
+
+- N: Moves to the previous occurrence of the search pattern.
+
+- *: Searches for the word under the cursor.
+
+## 2. chmod Command
+
+*chmod* is used to change the permissions of files and directories in Linux. File permissions control who can read, write, or execute a file.
+
+### 2.1 Basic chmod Usage
+
+- chmod [permissions] [file]: Changes the permissions of a file or directory.
+
+### 2.2 Permission Symbols
+
+- *r*: Read permission (4).
+- *w*: Write permission (2).
+- *x*: Execute permission (1).
+
+### 2.3 Numeric Mode
+
+- chmod 755 [file]: Sets read, write, and execute permissions for the owner, and read and execute permissions for the group and others.
+
+- chmod 644 [file]: Sets read and write permissions for the owner, and read-only permissions for the group and others.
+
+### 2.4 Symbolic Mode
+
+- chmod u+x [file]: Adds execute permission for the owner.
+
+- chmod g-w [file]: Removes write permission for the group.
+
+- chmod o=r [file]: Sets read-only permission for others.
+
+### 2.5 Recursive Changes
+
+- chmod -R [permissions] [directory]: Recursively changes the permissions of a directory and its contents.
+
+## 3. awk Command
+
+*awk* is a powerful text processing tool used for pattern scanning and processing. It can extract and manipulate data from text files.
+
+### 3.1 Basic awk Usage
+
+- awk '{print $1}' [file]: Prints the first field (column) of each line in a file.
+
+### 3.2 Field and Record Separation
+
+- *Fields*: Awk divides each line into fields, separated by whitespace or specified delimiters.
+  - $1, $2, ... $n: Represents the first, second, ..., nth field.
+
+- *Records*: Each line of the input file is treated as a record.
+  - NR: Represents the current record number.
+  - FNR: Represents the record number in the current file.
+
+### 3.3 Common Operations
+
+- awk '/pattern/ {print $0}' [file]: Prints lines that match a specific pattern.
+
+- awk '{print $1, $3}' [file]: Prints the first and third fields of each line.
+
+- awk -F, '{print $1}' [file]: Uses a comma as the field separator instead of the default whitespace.
+
+- awk '{sum += $1} END {print sum}' [file]: Calculates the sum of the first field in all lines.
+
+- awk '{if ($1 > 50) print $0}' [file]: Prints lines where the first field is greater than 50.
+
+### 3.4 Advanced Features
+
+- awk 'BEGIN {FS=","; OFS="|"} {print $1, $2}' [file]: Sets the input and output field separators.
+
+- awk 'NR==10, NR==20 {print $0}' [file]: Prints lines 10 to 20.
+
+- awk '{print $1; print $2}' [file]: Prints the first and second fields on separate lines.
+
+## Conclusion
+
+These commands are fundamental tools in Linux for text editing (Vim), file permission management (chmod), and text processing (awk). Mastering them will greatly enhance your productivity and efficiency in the Linux environment.
