@@ -1,5 +1,14 @@
 ### Docker Networking: An Overview
 
+docker pinging
+```bash
+docker exec -it name_Of_container /bin/bash
+root>> apt update
+root>> apt-get install iputils-ping -y
+root>> ping IP_Address
+```
+
+
 #### **1. Introduction to Docker Networking**
 Docker networking is a critical component that allows containers to communicate with each other, with external systems, and with the host machine. Understanding Docker networking is essential for deploying scalable, efficient, and secure containerized applications.
 
